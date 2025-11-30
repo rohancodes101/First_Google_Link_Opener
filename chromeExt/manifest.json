@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Auto Skip Google Redirect Notice",
+  "version": "1.0",
+  "description": "Automatically clicks the redirect link on Google's redirect notice page.",
+  "content_scripts": [
+    {
+      "matches": ["https://www.google.com/url*"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}

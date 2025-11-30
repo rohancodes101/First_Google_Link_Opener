@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AWS SAA Topic 1 Questions</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #d2d1d1ff;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    h1 {
+        margin-bottom: 20px;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(10, 110px);
+        grid-gap: 10px;
+    }
+    .btn {
+        background: #e8bdbd;
+        border: 1px solid #555;
+        padding: 12px;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 6px;
+        transition: 0.2s;
+    }
+    .btn:hover {
+        background: #444;
+    }
+</style>
+</head>
+<body>
+
+<h1>AWS SAA — Topic 1 Questions</h1>
+
+<div class="grid" id="grid"></div>
+
+<script>
+    // Generate 1 to 100 buttons
+    const grid = document.getElementById("grid");
+    for (let i = 1; i <= 1020; i++) {
+        const b = document.createElement("div");
+        b.className = "btn";
+        b.textContent = i;
+
+        b.onclick = () => {
+            const query = `exam topics aws saa topic 1 question ${i}`;
+            const url = `https://www.google.com/search?q=${encodeURIComponent(query)}&btnI=I`;
+            window.open(url, "_blank");
+        };
+        
+        grid.appendChild(b);
+    }
+</script>
+
+</body>
+</html>
